@@ -46,3 +46,22 @@
     text-align: center;
     margin-right: 1em;
 }
+
+@media screen and (max-width: 600px) {
+    .game {
+        width: 100vw;
+        height: 100vh;
+    }
+    .wordContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .letter, .blankSquare {
+        height: 75px;
+        font-size: 3em;
+        text-align: center;
+        align-items: center;
+    }
+}
