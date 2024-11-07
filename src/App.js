@@ -18,7 +18,7 @@ const stages = [
   { id: 3, name: "end" },
 ];
 
-const guessesNumber = 3
+const guessesNumber = 5
 
 function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
@@ -56,9 +56,6 @@ function App() {
     // create array off letters
     let wordLetters = word.split("");
     wordLetters = wordLetters.map((l) => l.toLowerCase());
-
-    console.log(word, category);
-    console.log(wordLetters);
 
     // fill states
     setPickedCategory(category);
